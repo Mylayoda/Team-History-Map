@@ -1,0 +1,97 @@
+﻿
+@page
+@model ContactModel
+
+<style>
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+</style>
+
+<body>
+
+    <h3>Request your Information Pack</h3>
+
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+            <label for="email">Email ad.</label>
+            <input type="text" id="email" name="email" placeholder="Your email address.."><br>
+
+            <label for="history">Histories</label>
+            <select id="history" name="history">
+                <option value="museum">High Wycombe Museum</option>
+                <option value="bucks">Bucks University History</option>
+                <option value="school">1970's School in Wycombe</option>
+            </select><br>
+
+            <label for="subject">Subject</label><br>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+
+            <input type="submit" button onclick="myFunction()" value="Submit">
+            <script>function myFunction() {
+                    alert("Thank you. An information pack will be sent to your email shortly");
+                }</script>
+        </form>
+    </div>
+
+    <address>
+        THE COMMUNITY HISTORY MAP<br />
+        The Lodge<br />
+        90 Station Road<br />
+        Chinnor OX39  4HA<br />
+        <abbr title="Telephone">T:</abbr>
+        01844 355500
+    </address>
+
+    <address>
+        Team History:
+        <strong><abbr title="Telephone">T:</abbr></strong> 01494 522141 x4105<br />
+        <strong>Email:</strong> <a href="mailto:derrickagyeman83@yahoo.com">21703340@bucks.ac.uk</a>
+    </address>
+</body>
+
+
+
+
+
