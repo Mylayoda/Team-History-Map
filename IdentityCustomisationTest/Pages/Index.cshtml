@@ -3,13 +3,14 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<!--Derrick-->
 <div class="row">
     <div class="col-md-8">
         <h2><b>HIGH WYCOME COMMUNITY HISTORY MAP</b></h2>
 
     </div>
 </div>
-<div id="myCarousel"  class="carousel slide" data-ride="carousel" data-interval="7000">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="7000">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -68,20 +69,23 @@
                 <h4><a class="nav-link active" style="color:white;margin-left:25px" href="#">Events</a></h4>
             </li>
             <li class="nav-item">
-                <h4><a class="nav-link" style="color:white" href="/Privacy">Start Booking</a></h4>
+                <h4><a class="nav-link" style="color:white" href="/Booking">Start Booking</a></h4>
             </li>
             <li class="nav-item">
                 <h4><a class="nav-link" style="color:white" href="#">Request A Tour Guide</a></h4>
             </li>
-           
+
         </ul>
 
     </div>
 </div>
 
-<div id="mapid" style="height:600px;padding-top:30px"></div>
+<div id="mapid" style="height:600px;padding-top:30px"></div><center>
+<button type="button" class="btn btn-success" onclick="toggleit()">On</button>
+<button type="button" class="btn btn-danger">Off</button></center>
+
 <footer>
-    
+
     <div id="footer2" class="container-fluid">
         <center>
             <p>&copy All right Reserved.<a class="footerlinks" href="#" target="_blank">iLearn Ghana</a></p>
@@ -117,7 +121,7 @@
         imageBounds = [[51.6286, -0.7482], [51.6296, -0.7454]];
     L.imageOverlay(imagesrc, imageBounds).addTo(map);
 
-
+    /*Sayeed-code*/ 
 
     var polygon = L.polygon([
         [51.647299, -0.635231],
@@ -127,6 +131,11 @@
         [51.646466, -0.826730],
         [51.657324, -0.794917]
     ]).addTo(map);
+
+
+
+
+   
 </script>
 
 
